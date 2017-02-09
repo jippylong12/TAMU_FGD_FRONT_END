@@ -1,0 +1,49 @@
+@import url(//fonts.googleapis.com/css?family=Bitter|Multi);
+
+
+html {
+    background-color: lightgray;
+}
+
+table, th, td {
+    border: 2px solid dimgray;
+    border-collapse: collapse;
+
+}
+
+th {
+    padding: 15px;
+    font-family: "Times New Romans", Times, serif;
+    font-size: large;
+    background-color: maroon;
+    color: white;
+}
+
+td {
+    padding: 30px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+h1.title {
+    color: lightgray;
+    background: maroon;
+    text-align: center;
+    height: 50px;
+    font-family: 'Bitter', serif;
+
+}
+p{
+    font-family: 'Muli', sans-serif;
+}
+
+body.inputText {
+    font-family: 'Muli', sans-serif;
+
+}
+
+h4.suggestion {
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    color: maroon;
+}
