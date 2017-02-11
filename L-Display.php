@@ -134,14 +134,14 @@
 				$html_table .= "<th>$header</th>";
 			}
 			$html_table .= "</tr><br><tr>";
-			$nr_col = 8;       // Sets the number of columns
+			$nr_col = 9;       // Sets the number of columns
 
 			// If the array has elements
 			if ($nr_elm > 0) {
 				// Traverse the array with FOR
 				for ($i = 0; $i < $nr_elm; $i++) {
 
-					if($i > 1 && $i < 7)
+					if($i > 1 && $i < 8)
 					{
 						$teacherInfo[$i] = roundString($teacherInfo[$i]);
 					}
