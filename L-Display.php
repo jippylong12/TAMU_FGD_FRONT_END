@@ -2,13 +2,15 @@
 <html>
 <link rel="stylesheet" type="text/css" href="style.css">
 <?php
-
 	// loads all the courses into an array
 
+    // USED TO SORT THE RESULTS BY GPA
 	function sortResultsByGPA($a,$b)
 	{
 		return strcmp($b[2],$a[2]);
 	}
+
+	// GETS THE TEXT FILES OF THE COURSES ON THE SERVER AND LOADS THEM TO ARRAY
 	function getTextFiles()
 	{
 		$currentDir = getcwd() . '/TextCoursesList';
@@ -26,16 +28,24 @@
 		$float = round($float,2);
 		return strval($float) . '%';
 	}
+
+	// FROM THE TEXT FILES GET ALL THE POSSIBLE 4 DIGIT COLLEGE CODES
 	function loadCourseDB()
 	{
+
 		$CourseDB = array();
 		$listOfFiles = getTextFiles();
 		chdir(getcwd() . '/TextCoursesList');
+
 		foreach ($listOfFiles as $file)
 		{
+		    // FIND THE SCHOOL
 			$school = substr($file,0,2);
+			// LOAD THE FILE
 			$lines = file($file);
+			// WHAT TO REPLACE
 			$searches = array("\r", "\n", "\r\n");
+			//FOR EACH COLLEGE WE ARE GOING TO CLEAR UP THE NEW LINES AFTER TO JUST GET 4 DIGIT COLLEGE
 			for ($x = 0; $x < sizeof($lines); $x++) {
 				$lines[$x] = str_replace($searches, "", $lines[$x]);
 			}
@@ -62,6 +72,7 @@
 		return array($checkCollege,$checkCourse);
 	}
 
+	//STARTT
 	$CourseDB = loadCourseDB();
 	$course = $_POST['my_html_input_tag'];
 	$courseNumber = $_POST['my_html_input_tag1'];
@@ -136,6 +147,12 @@
 			$html_table .= "</tr><br><tr>";
 			$nr_col = 9;       // Sets the number of columns
 
+            $honors_class = false;
+            // if this is honors
+            if(strpos($teacherInfo[0], '*')) {
+                $honors_class = true;
+                $teacherInfo[0] = str_replace('*','',$teacherInfo[0]);
+            }
 			// If the array has elements
 			if ($nr_elm > 0) {
 				// Traverse the array with FOR
@@ -146,7 +163,13 @@
 						$teacherInfo[$i] = roundString($teacherInfo[$i]);
 					}
 
-					$html_table .= '<td align="center">' . $teacherInfo[$i] . '</td>';       // adds the value in column in table
+					// if this is honors
+					if($honors_class) {
+                        $html_table .= '<td align="center" class="honors">' . $teacherInfo[$i] . '</td>';       // adds the value in column in table
+
+                    } else{
+                        $html_table .= '<td align="center">' . $teacherInfo[$i] . '</td>';       // adds the value in column in table
+                    }
 
 					// If the number of columns is completed for a row (rest of division of ($i + 1) to $nr_col is 0)
 					// Closes the current row, and begins another row

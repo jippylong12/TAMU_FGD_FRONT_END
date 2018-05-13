@@ -11,6 +11,10 @@ table, th, td {
 
 }
 
+.honors {
+    background-color: #998542;
+}
+
 th {
     padding: 15px;
     font-family: "Times New Romans", Times, serif;
@@ -34,16 +38,26 @@ h1.title {
 
 }
 p{
-    font-family: 'Muli', sans-serif;
+    font-family: Verdana;
+    font-size: 18px;
 }
 
 body.inputText {
-    font-family: 'Muli', sans-serif;
+    font-family: Verdana;
 
 }
 
 h4.suggestion {
-    font-family: 'Muli', sans-serif;
+    font-family: Verdana;
     text-align: center;
     color: maroon;
+}
+
+.credits {
+    font-family: Verdana;
+    text-align: center;
+}
+
+h5 {
+    font-size: 18px;
 }
