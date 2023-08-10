@@ -74,7 +74,7 @@
 
 	//STARTT
 	$CourseDB = loadCourseDB();
-	$course = $_POST['my_html_input_tag'];
+	$course = strtoupper(trim($_POST['my_html_input_tag']));
 	$courseNumber = $_POST['my_html_input_tag1'];
 	$sortBy = $_POST['SortBy'];
 	$fullCourse = strtoupper($course) . '-' . $courseNumber;
