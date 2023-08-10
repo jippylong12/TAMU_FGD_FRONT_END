@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3d82602-8b1f-4ba9-bebb-3beaf63814b9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/AGMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/AGMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/ARMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/ARMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/BAMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/BAMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/EDMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/EDMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/ENMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/ENMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/GBMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/GBMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/GEMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/GEMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/LAMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/LAMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/MSMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/MSMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/SCMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/SCMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterDBs/VMMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/VMMasterDB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextCoursesList/AGCoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/AGCoursesList.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextCoursesList/BACoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/BACoursesList.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextCoursesList/ENCoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/ENCoursesList.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextCoursesList/GBCoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/GBCoursesList.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextCoursesList/LACoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/LACoursesList.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextCoursesList/SCCoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/SCCoursesList.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,15 +141,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="PHP Script.L-Display.php">
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
@@ -205,6 +188,15 @@
       <updated>1470882482790</updated>
       <workItem from="1691628187489" duration="6000" />
     </task>
+    <task id="LOCAL-00001" summary="Using index I don't even know where from but it's the latest&#10;Removing the CSV files from the git">
+      <option name="closed" value="true" />
+      <created>1691628647158</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691628647158</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -274,6 +266,10 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Using index I don't even know where from but it's the latest&#10;Removing the CSV files from the git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using index I don't even know where from but it's the latest&#10;Removing the CSV files from the git" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
