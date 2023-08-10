@@ -1,24 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3d82602-8b1f-4ba9-bebb-3beaf63814b9" name="Default" comment="" />
-    <ignored path="cPanel.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path=".idea/dataSources.local.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="a3d82602-8b1f-4ba9-bebb-3beaf63814b9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/AGMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/AGMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/ARMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/ARMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/BAMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/BAMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/EDMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/EDMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/ENMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/ENMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/GBMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/GBMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/GEMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/GEMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/LAMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/LAMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/MSMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/MSMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/SCMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/SCMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterDBs/VMMasterDB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MasterDBs/VMMasterDB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextCoursesList/AGCoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/AGCoursesList.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextCoursesList/BACoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/BACoursesList.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextCoursesList/ENCoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/ENCoursesList.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextCoursesList/GBCoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/GBCoursesList.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextCoursesList/LACoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/LACoursesList.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextCoursesList/SCCoursesList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextCoursesList/SCCoursesList.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="cPanel" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -77,6 +94,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -91,28 +111,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectId" id="2Tlqo9YpttIXXtJ3cLir0f2eRZU" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -150,60 +155,44 @@
       </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="false" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RunManager" selected="PHP Script.L-Display.php">
-    <configuration default="false" name="L-Display.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/L-Display.php">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration name="L-Display.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/L-Display.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <method />
+      <method v="2" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="PHP Script.L-Display.php" />
-      <item index="1" class="java.lang.String" itemvalue="PHP Script.index.php" />
+    <list>
+      <item itemvalue="PHP Script.L-Display.php" />
+      <item itemvalue="PHP Script.index.php" />
     </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.L-Display.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHP Script.index.php" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -212,7 +201,9 @@
       <changelist id="a3d82602-8b1f-4ba9-bebb-3beaf63814b9" name="Default" comment="" />
       <created>1470882482790</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1470882482790</updated>
+      <workItem from="1691628187489" duration="6000" />
     </task>
     <servers />
   </component>
@@ -262,6 +253,20 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -269,42 +274,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/index.php</url>
-          <line>59</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/L-Display.php</url>
-          <line>166</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/L-Display.php</url>
-          <line>191</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/L-Display.php</url>
-          <line>69</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/L-Display.php</url>
-          <line>117</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="25" />
-    </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
