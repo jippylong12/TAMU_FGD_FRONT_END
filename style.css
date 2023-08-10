@@ -15,6 +15,8 @@ table, th, td {
     background-color: #998542;
 }
 
+ul {list-style: none;}
+
 th {
     padding: 15px;
     font-family: "Times New Romans", Times, serif;
@@ -33,9 +35,8 @@ h1.title {
     color: lightgray;
     background: maroon;
     text-align: center;
-    height: 50px;
     font-family: 'Bitter', serif;
-
+    padding: 8px 0;
 }
 p{
     font-family: Verdana;
@@ -48,7 +49,7 @@ body.inputText {
 }
 
 .padded-container {
-    padding: 16px 100px;
+    padding: 16px 100px 0px 100px;
     text-align: center;
 }
 
