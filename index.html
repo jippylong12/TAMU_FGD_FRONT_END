@@ -11,14 +11,55 @@
     <h1 class="title"> TAMU Free Grade Distribution</h1>
 
     <div class="row">
+
+        <div class="col-12 d-flex justify-content-center mt-2 mt-sm-0 px-4">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center fs-5">Enter the course information into the submission boxes below and the next page will show the grade distribution</p>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-3">
+                    <form action="L-Display.php" method="post" id="myForm">
+
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-floating mb-3">
+                                    <input name="my_html_input_tag" value=""  class="form-control" form="myForm"/>
+                                    <label class="inputText">Course (Ex: CSCE)</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-floating mb-3">
+                                    <input name="my_html_input_tag1" value="" class="form-control" form="myForm"/>
+                                    <label class="inputText">Course Number (Ex: 111)</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-floating mb-3">
+                                    <select name="SortBy" class="form-select" form="myForm">
+                                        <option value="1">GPA</option>
+                                        <option value="2">Professor Last Name</option>
+                                    </select>
+                                    <label class="inputText">Sort By: </label>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6 mt-sm-2">
+                                <input style="text-align: center" type="submit" name="test2" value="Submit" class="btn btn-dark form-control" />
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <div class="col-12 mb-2">
-            <h5 class="suggestion"><a href="http://www.jippylong12.xyz">Me</a></h5>
             <h5 class="suggestion"> Data from Spring 2012 - Fall 2022</h5>
-            <h5 class="suggestion">For suggestions email <a href="mailto: jippylong12@gmail.com">me</a></h5>
+            <h5 class="suggestion"> <a href="mailto: jippylong12@gmail.com">Email</a> for suggestions</h5>
+            <h5 class="suggestion"><a href="http://www.jippylong12.xyz">Me</a></h5>
         </div>
 
         <div class="col-12 px-4">
-            <p class="text-center">Enter the course information into the submission boxes below and the next page will show the grade distribution</p>
             <p class="text-center"> I want this to be helpful to all students. </p>
             <p class="text-center">An education is the best indicator of success, but you don't have to be dumb going about getting one.</p>
             <p class="text-center"> I will keep updating the course data as long as I can.</p>
@@ -30,41 +71,6 @@
         </div>
         <div class="col-12">
             <p style="text-align: center"><b>I'm glad this website is helping people. </b> </p>
-        </div>
-
-        <div class="col-12 d-flex justify-content-center order-first order-sm-last mt-2 mt-sm-0 px-4">
-            <form action="L-Display.php" method="post">
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-floating mb-3">
-                            <input name="my_html_input_tag" value=""  class="form-control"/>
-                            <label class="inputText">Course (Ex: CSCE)</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-floating mb-3">
-                            <input name="my_html_input_tag1" value="" class="form-control" />
-                            <label class="inputText">Course Number (Ex: 111)</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-floating mb-3">
-                            <select name="SortBy" class="form-select">
-                                <option value="1">GPA</option>
-                                <option value="2">Professor Last Name</option>
-                            </select>
-                            <label class="inputText">Sort By: </label>
-                        </div>
-
-                    </div>
-                    <div class="col-12">
-                        <input style="text-align: center" type="submit" name="test2" value="Submit" class="btn btn-dark form-control" />
-
-                    </div>
-                </div>
-
-            </form>
         </div>
     </div>
 
