@@ -1,6 +1,7 @@
 
 html, body {
     background-color: lightgray !important;
+    width: 100%
 }
 
 table, th, td {
