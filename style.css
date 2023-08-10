@@ -47,7 +47,13 @@ body.inputText {
 
 }
 
+.padded-container {
+    padding: 16px 100px;
+    text-align: center;
+}
+
 h4.suggestion {
+    margin: 0.25em;
     font-family: Verdana;
     text-align: center;
     color: maroon;
@@ -56,6 +62,7 @@ h4.suggestion {
 .credits {
     font-family: Verdana;
     text-align: center;
+    margin: 12px;
 }
 
 h5 {
