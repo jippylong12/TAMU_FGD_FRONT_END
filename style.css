@@ -1,8 +1,6 @@
-@import url(//fonts.googleapis.com/css?family=Bitter|Multi);
 
-
-html {
-    background-color: lightgray;
+html, body {
+    background-color: lightgray !important;
 }
 
 table, th, td {
@@ -40,29 +38,22 @@ h1.title {
     padding: 8px 0;
 }
 p{
-    font-family: Verdana;
     font-size: 18px;
 }
 
-body.inputText {
-    font-family: Verdana;
-
-}
 
 .padded-container {
     padding: 16px 100px 0px 100px;
     text-align: center;
 }
 
-h4.suggestion {
+h5.suggestion {
     margin: 0.25em;
-    font-family: Verdana;
     text-align: center;
     color: maroon;
 }
 
 .credits {
-    font-family: Verdana;
     text-align: center;
     margin: 12px;
 }
