@@ -7,7 +7,7 @@
     <title>Results</title>
 </head>
 
-<body class="container-fluid">
+<body class="container">
     <?php
 // loads all the courses into an array
 
