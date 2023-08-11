@@ -7,28 +7,35 @@ html, body {
 table, th, td {
     border: 2px solid dimgray;
     border-collapse: collapse;
+}
 
+table {
+    table-layout: auto;
+}
+
+tr {
+    text-align: center;
+    border-color: maroon !important;
 }
 
 .honors {
-    background-color: #998542;
+    background-color: #998542 !important;
 }
 
 ul {list-style: none; margin: 0;
     padding: 0;}
 
 th {
-    padding: 15px;
-    font-family: "Times New Romans", Times, serif;
+    padding: 15px !important;
     font-size: large;
-    background-color: maroon;
+    background-color: maroon !important;
     color: white;
 }
 
 td {
-    padding: 30px;
+    padding: 30px !important;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: whitesmoke !important;
 }
 
 h1.title {
