@@ -102,20 +102,23 @@ if(!$errorBool) {
     $headerArray = $csv[0];
     array_splice($headerArray,0,1);
     $finalHTML = '';
+    $nr_col = 9;       // Sets the number of columns
+
+    // Create the beginning of HTML table, and of the first row
+    $html_table = '<div class="table-responsive-md"><table class="table mt-2 mb-2"><thead class="sticky-top"><tr>';
+    // create headers
+    foreach ($headerArray as $header)
+    {
+        $html_table .= "<th>$header</th>";
+    }
+
+    $html_table .= "</tr></thead>";
+
     foreach ($resultsArray as $teacherInfo) {
+        $html_table .= "<tr>";
         array_splice($teacherInfo,0,1);
 
         $nr_elm = count($teacherInfo);        // gets number of elements in $aray
-
-        // Create the beginning of HTML table, and of the first row
-        $html_table = '<div class="table-responsive"><table class="table mt-2 mb-2"><tr>';
-        // create headers
-        foreach ($headerArray as $header)
-        {
-            $html_table .= "<th>$header</th>";
-        }
-        $html_table .= "</tr><tr>";
-        $nr_col = 9;       // Sets the number of columns
 
         $honors_class = false;
         // if this is honors
@@ -153,13 +156,15 @@ if(!$errorBool) {
             if ($col_to_add != 0) $html_table .= '<td colspan="' . ($nr_col - $col_to_add) . '">&nbsp;</td>';
         }
 
-        $html_table .= '</tr></table> </div>';         // ends the last row, and the table
+        $html_table .= '</tr>';         // ends the last row, and the table
 
         // Delete possible empty row (<tr></tr>) which cand be created after last column
         $html_table = str_replace('<tr></tr>', '', $html_table);
-        $finalHTML .= $html_table;
     }
-    echo $finalHTML;
+
+
+    $html_table .= '</table></div>';
+    echo $html_table;
 }
 
 ?>
