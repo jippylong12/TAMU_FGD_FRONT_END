@@ -11,9 +11,9 @@
     <?php
     require 'ResultsGenerator.php';
 
-    $my_class = new ResultsGenerator();
+    $generator = new ResultsGenerator();
 
-    $my_class->generate();
+    $generator->generate();
 ?>
 </body>
 </html>

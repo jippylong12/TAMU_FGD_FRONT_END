@@ -8,49 +8,14 @@ class ResultsGenerator
         $courseNumber = trim($_POST['my_html_input_tag1']);
         $sortBy = $_POST['SortBy'];
         $fullCourse = $course . '-' . $courseNumber;
-        $errorBool = false;
+        $errorBool = $this->hasErrors($course, $courseNumber);
 
-        //error checking
-        if (strlen($course) != 4) {
-            echo '<h1>Bad Course Code</h1><br>';
-            $errorBool = True;
-        }
-        if ((floatval($courseNumber) < 100) or (floatval($courseNumber) > 10000) or ($courseNumber == '')) {
-            echo '<h1> Bad Course Number </h1><br>';
-            $errorBool = True;
-        }
+
         if (!$errorBool) {
-            $resultsArray = array();
-            $endOfCourseBool = False;
+            $data = $this->readDBData($fullCourse, $sortBy);
+            $headerArray = $data['header'];
+            $resultsArray = $data['results'];
 
-            // if we have something
-            //load the csv for the correct course
-            $csvFileName = 'MasterDBs/MasterDB.csv';
-            $csv = array_map("str_getcsv", file($csvFileName));
-            for ($x = 0; $x < sizeof($csv); $x++) {
-                $testing = $csv[$x][0];
-                $test = $fullCourse == $csv[$x][0];
-                if ($fullCourse == $csv[$x][0]) {
-                    $x++;
-                    while (True) {
-                        $test = ($csv[$x + 1][0] != "") and ($csv[$x + 1][1] != "");
-                        if ($test)
-                            break;
-                        array_push($resultsArray, $csv[$x]);
-                        $x++;
-                    }
-                }
-            }
-            if (count($resultsArray) == 0) {
-                echo '<h1>Could Not Find Course</h1><br>';
-
-                return 0;
-            }
-
-            if ($sortBy == 1)
-                usort($resultsArray, "sortResultsByGPA");
-
-            $headerArray = $csv[0];
             array_splice($headerArray, 0, 1);
             $finalHTML = '';
             $nr_col = 9;       // Sets the number of columns
@@ -117,8 +82,48 @@ class ResultsGenerator
         }
     }
 
-    private function checkErrors() {
+    private function readDBData($fullCourse, $sortBy) {
+        // if we have something
+        //load the csv for the correct course
+        $resultsArray = [];
+        $csvFileName = 'MasterDBs/MasterDB.csv';
+        $csv = array_map("str_getcsv", file($csvFileName));
+        for ($x = 0; $x < sizeof($csv); $x++) {
+            if ($fullCourse == $csv[$x][0]) {
+                $x++;
+                while (True) {
+                    $test = ($csv[$x + 1][0] != "") and ($csv[$x + 1][1] != "");
+                    if ($test)
+                        break;
+                    array_push($resultsArray, $csv[$x]);
+                    $x++;
+                }
+            }
+        }
+        if (count($resultsArray) == 0) {
+            echo '<h1>Could Not Find Course</h1><br>';
+            return 0;
+        }
 
+        if ($sortBy == 1)
+            usort($resultsArray, "sortResultsByGPA");
+
+        return [
+            'header' => $csv[0],
+            'results' => $resultsArray,
+        ];
+    }
+
+    private function hasErrors($course, $courseNumber ) {
+        if (strlen($course) != 4) {
+            echo '<h1>Bad Course Code</h1><br>';
+            return True;
+        }
+        if ((floatval($courseNumber) < 100) or (floatval($courseNumber) > 10000) or ($courseNumber == '')) {
+            echo '<h1> Bad Course Number </h1><br>';
+            return True;
+        }
+        return False;
     }
 
     //some of the value of the string are to a crazy decimal place and we need to round it.
