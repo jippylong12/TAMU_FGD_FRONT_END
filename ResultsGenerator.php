@@ -52,7 +52,12 @@ class ResultsGenerator
 
                     // if this is honors
                     if ($honors_class) {
-                        $html_table .= '<td align="center" class="honors">' . $teacherInfo[$i] . '</td>';       // adds the value in column in table
+                        if($i == 0){
+                            $html_table .= '<td align="center" class="honors text-light"><div class="shimmer">' . $teacherInfo[$i] . '</div></td>';       // adds the value in column in table
+
+                        } else {
+                            $html_table .= '<td align="center" class="honors text-light">' . $teacherInfo[$i] . '</td>';       // adds the value in column in table
+                        }
                     } else {
                         $html_table .= '<td align="center">' . $teacherInfo[$i] . '</td>';       // adds the value in column in table
                     }
