@@ -20,6 +20,7 @@ tr {
 
 .honors {
     background-color: #998542 !important;
+    border-color: #998542 !important;
 }
 
 ul {list-style: none; margin: 0;
@@ -36,6 +37,7 @@ td {
     padding: 20px !important;
     text-align: center;
     background-color: whitesmoke !important;
+    border-color: whitesmoke !important;
 }
 
 h1.title {
