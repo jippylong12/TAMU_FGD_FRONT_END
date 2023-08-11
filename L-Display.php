@@ -40,7 +40,7 @@
 		foreach ($listOfFiles as $file)
 		{
 		    // FIND THE SCHOOL
-			$school = substr($file,0,2);
+			$school = str_replace("CoursesList.txt", "", $file);
 			// LOAD THE FILE
 			$lines = file($file);
 			// WHAT TO REPLACE
@@ -61,7 +61,6 @@
 		$checkCollege = "";
 		$checkCourse = "";
 		foreach ($CourseDB as $college) {
-			$test1 = strtoupper($course);
 			$foundCourseBool = in_array(strtoupper($course), $college);
 			if ($foundCourseBool) {
 				$checkCollege = array_search($college, $CourseDB);
@@ -77,7 +76,7 @@
 	$course = strtoupper(trim($_POST['my_html_input_tag']));
 	$courseNumber = $_POST['my_html_input_tag1'];
 	$sortBy = $_POST['SortBy'];
-	$fullCourse = strtoupper($course) . '-' . $courseNumber;
+	$fullCourse = $course . '-' . $courseNumber;
 	$errorBool = false;
 	//error checking
 	if (strlen($course) != 4){
