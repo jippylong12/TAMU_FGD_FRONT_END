@@ -10,10 +10,7 @@
 <body class="container">
     <?php
     require 'ResultsGenerator.php';
-
-    $generator = new ResultsGenerator();
-
-    $generator->generate();
+    (new ResultsGenerator())->generate();
 ?>
 </body>
 </html>
