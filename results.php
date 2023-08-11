@@ -33,25 +33,15 @@
 	function loadCourseDB()
 	{
 
-		$CourseDB = array();
-		$listOfFiles = getTextFiles();
-		chdir(getcwd() . '/TextCoursesList');
+        $lines = file('TextCoursesList/CoursesList.txt');
+        $searches = array("\r", "\n", "\r\n");
 
-		foreach ($listOfFiles as $file)
-		{
-		    // FIND THE SCHOOL
-			$school = str_replace("CoursesList.txt", "", $file);
-			// LOAD THE FILE
-			$lines = file($file);
-			// WHAT TO REPLACE
-			$searches = array("\r", "\n", "\r\n");
-			//FOR EACH COLLEGE WE ARE GOING TO CLEAR UP THE NEW LINES AFTER TO JUST GET 4 DIGIT COLLEGE
-			for ($x = 0; $x < sizeof($lines); $x++) {
-				$lines[$x] = str_replace($searches, "", $lines[$x]);
-			}
-			$CourseDB[$school] = $lines;
-		}
-		return $CourseDB;
+        //FOR EACH COLLEGE WE ARE GOING TO CLEAR UP THE NEW LINES AFTER TO JUST GET 4 DIGIT COLLEGE
+        for ($x = 0; $x < sizeof($lines); $x++) {
+            $lines[$x] = str_replace($searches, "", $lines[$x]);
+        }
+
+        return $lines;
 	}
 
 	//gets the college and course from the Course DB
@@ -60,14 +50,10 @@
 		$foundCourseBool = False;
 		$checkCollege = "";
 		$checkCourse = "";
-		foreach ($CourseDB as $college) {
-			$foundCourseBool = in_array(strtoupper($course), $college);
-			if ($foundCourseBool) {
-				$checkCollege = array_search($college, $CourseDB);
-				$checkCourse = array_search(strtoupper($course), $college);
-				break;
-			}
-		}
+        $foundCourseBool = in_array(strtoupper($course), $CourseDB);
+        if ($foundCourseBool) {
+            $checkCourse = array_search(strtoupper($course), $college);
+        }
 		return array($checkCollege,$checkCourse);
 	}
 
@@ -89,36 +75,27 @@
 		$errorBool = True;
 	}
 	if(!$errorBool) {
-		$returnArray = getInformation($CourseDB, $course);
-		$checkCollege = $returnArray[0];
-		$checkCourse = $returnArray[1];
-
-		chdir(getcwd() . '/..' . '/MasterDBs');
-
 		$resultsArray = array();
-
 		$endOfCourseBool = False;
 
 		// if we have something
-		if ($checkCollege != "") {
-			//load the csv for the correct course
-			$csvFileName = $checkCollege . 'MasterDB.csv';
-			$csv = array_map("str_getcsv", file($csvFileName));
-			for ($x = 0; $x < sizeof($csv); $x++) {
-				$testing = $csv[$x][0];
-				$test = $fullCourse == $csv[$x][0];
-				if ($fullCourse == $csv[$x][0]) {
-					$x++;
-					while (True) {
-						$test = ($csv[$x + 1][0] != "") and ($csv[$x + 1][1] != "");
-						if ($test)
-							break;
-						array_push($resultsArray, $csv[$x]);
-						$x++;
-					}
-				}
-			}
-		}
+        //load the csv for the correct course
+        $csvFileName = 'MasterDBs/MasterDB.csv';
+        $csv = array_map("str_getcsv", file($csvFileName));
+        for ($x = 0; $x < sizeof($csv); $x++) {
+            $testing = $csv[$x][0];
+            $test = $fullCourse == $csv[$x][0];
+            if ($fullCourse == $csv[$x][0]) {
+                $x++;
+                while (True) {
+                    $test = ($csv[$x + 1][0] != "") and ($csv[$x + 1][1] != "");
+                    if ($test)
+                        break;
+                    array_push($resultsArray, $csv[$x]);
+                    $x++;
+                }
+            }
+        }
 		if (count($resultsArray) == 0){
 			echo '<h1>Could Not Find Course</h1><br>';
 
@@ -187,29 +164,6 @@
 			// Delete possible empty row (<tr></tr>) which cand be created after last column
 			$html_table = str_replace('<tr></tr>', '', $html_table);
 			$finalHTML .= $html_table;
-			//echo $html_table;        // display the HTML table
-
-//			for ($x = 0; $x < sizeof($teacherInfo); $x++) {
-//				if ($x == 8)
-//				{
-//					echo $csv[0][$x] . ': ';
-//					echo $teacherInfo[$x];
-//					echo '<br>';
-//				}
-//				elseif ($x > 2) {
-//					echo $csv[0][$x] . ': ';
-//					echo number_format(round($teacherInfo[$x]), 2) . '%';
-//					echo '<br>';
-//				} else {
-//					if ($x != 0)
-//					{
-//						echo $csv[0][$x] . ': ';
-//						echo $teacherInfo[$x];
-//						echo '<br>';
-//					}
-//				}
-//			}
-//			echo '<br>';
 		}
 		echo $finalHTML;
 	}
