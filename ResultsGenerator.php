@@ -4,9 +4,9 @@ class ResultsGenerator
 {
     function generate()
     {
-        $course = strtoupper(trim($_POST['my_html_input_tag']));
-        $courseNumber = trim($_POST['my_html_input_tag1']);
-        $sortBy = $_POST['SortBy'];
+        $course = strtoupper(trim($_POST['course']));
+        $courseNumber = trim($_POST['course_number']);
+        $sortBy = $_POST['sort_by'];
         $fullCourse = $course . '-' . $courseNumber;
         $errorBool = $this->hasErrors($course, $courseNumber);
 
