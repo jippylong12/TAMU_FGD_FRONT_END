@@ -36,7 +36,7 @@
         navigator.clipboard.writeText(currentUrl);
         Toastify({
             text: "Copied!",
-            duration: 2000,
+            duration: 1000,
             gravity: "bottom", // `top` or `bottom`
             position: "center", // `left`, `center` or `right`
             stopOnFocus: false, // Prevents dismissing of toast on hover

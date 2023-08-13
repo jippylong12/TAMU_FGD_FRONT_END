@@ -13,7 +13,9 @@ function addSearchParams() {
 
     courseInput.value = searchParams.get("course");
     courseNumberInput.value = searchParams.get("number");
-    sortByInput.value = searchParams.get("sort_by")
+    if(searchParams.get("sort_by")){
+        sortByInput.value = searchParams.get("sort_by")
+    }
 
     if (searchParams.get("course") && searchParams.get("number")) {
         submitBtn.click();
