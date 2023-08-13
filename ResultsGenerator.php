@@ -8,9 +8,9 @@ class ResultsGenerator
         $courseNumber = trim($_POST['course_number']);
         $sortBy = $_POST['sort_by'];
 
-        echo "<input type=\"hidden\" id=\"course\" value=\"" . $course . "\"></input>\"";
-        echo "<input type=\"hidden\" id=\"number\" value=\"" . $courseNumber . "\"></input>\"";
-        echo "<input type=\"hidden\" id=\"sort_by\" value=\"" . $sortBy . "\"></input>\"";
+        echo "<input type=\"hidden\" id=\"course\" value=\"" . $course . "\"></input>";
+        echo "<input type=\"hidden\" id=\"number\" value=\"" . $courseNumber . "\"></input>";
+        echo "<input type=\"hidden\" id=\"sort_by\" value=\"" . $sortBy . "\"></input>";
 
         $fullCourse = $course . '-' . $courseNumber;
         $errorBool = $this->hasErrors($course, $courseNumber);
