@@ -8,10 +8,12 @@ function addSearchParams() {
 
     const courseInput = document.getElementById("course");
     const courseNumberInput = document.getElementById("course_number");
+    const sortByInput = document.getElementById("sort_by");
     const submitBtn = document.getElementById("submit_btn");
 
     courseInput.value = searchParams.get("course");
     courseNumberInput.value = searchParams.get("number");
+    sortByInput.value = searchParams.get("sort_by")
 
     if (searchParams.get("course") && searchParams.get("number")) {
         submitBtn.click();

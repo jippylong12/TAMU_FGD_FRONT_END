@@ -102,3 +102,20 @@ h5 {
         background-position: 12.5rem top; /*200px*/
     }
 }
+
+.copy-url-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .copy-url-button:hover {
+        background-color: #333;
+    }
+}
