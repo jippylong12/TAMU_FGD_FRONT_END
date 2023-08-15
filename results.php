@@ -32,7 +32,7 @@
         let course = document.getElementById('course').value;
         let number = document.getElementById('number').value;
         let sortBy = document.getElementById('sort_by').value;
-        let currentUrl = `https://jippylong12.xyz/tamuFGD?course=${course}&number=${number}&sort_by=${sortBy}`;
+        let currentUrl = `https://grades.jippylong12.xyz/?course=${course}&number=${number}&sort_by=${sortBy}`;
         navigator.clipboard.writeText(currentUrl);
         Toastify({
             text: "Copied!",
